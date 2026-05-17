@@ -1,0 +1,9 @@
+{
+    "launch": {
+         "editor.autoClosingBrackets": "never",
+  "editor.suggestOnTriggerCharacters": false
+    },
+    "github.copilot.enable": {
+        "*": false
+    }
+}
