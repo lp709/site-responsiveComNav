@@ -33,6 +33,7 @@
                 <div class="DevP">
                     <p><i class="fa-solid fa-code"></i>
                         Dev<span style="color: #1908f9;">Junior</span>
+                        <i class="fa-etch fa-solid fa-laptop"></i>
                     </p>
                 </div>
                 <!--Menu de Linkes-->
@@ -48,9 +49,17 @@
     <main>
         <div id="textContent">
             <h1>Aprenda <br>HTML & CSS</h1>
-            <p class="aprender-progamacao">Um jeito simples de aprender a criar<br> Paginas Web do zero</p>
+            <p class="aprender-progamacao">
+                Um jeito simples de aprender a criar<br> Paginas Web do zero
+            </p>
             <br>
-            <a href="#" class="btn-1">Começar Agora</a>
+            <a href="#" class="btn-1"><i class="fa-solid fa-chalkboard-user"> </i>Começar Agora</a><br><br>
+            <div id="zona-audio">
+                <button id="btn-musica" onclick="liberarAudio()">
+                    <p><i class="fa-solid fa-music"></i>Ouvir Música</p> 
+                </button>
+                <audio id="meu-audio" src="./audio/song.mp3" controls style="display: none;"></audio>
+            </div>
         </div>
     </main>
 </body>
