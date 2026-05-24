@@ -12,7 +12,8 @@ function liberarAudio() {
 
     botao.style.display = 'none';
 
-    audio.style.display = 'block';
+    audio.style.display = 'flex';
+
 
     audio.play();
 
