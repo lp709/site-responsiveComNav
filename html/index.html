@@ -2,69 +2,103 @@
 <html lang="pt-pt">
 
 <head>
-    <!--Metas Tags-->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:type" content="Website" />
-    <meta property="og:title" content="Leandro Jesus" />
-    <meta property="og:description" content="Aprenda HTML5 & CSS3" />
-    <meta name="keywords" content="HTML5 & CSS3" />
-    <meta name="description" content="Learning HTML5 & CSS3" />
-    <meta name="author" content="Leandro Jesus">
-    <!--JavaScript-->
-    <script defer src="script.js"></script>
-    <!--Icone favicon-->
-    <link rel="shortcut icon" href="./icon/android-chrome-192x192.png" type="image/x-icon">
-    <!--CSS-->
-    <link rel="stylesheet" href="style.css">
-    <!--Icones awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--Titulo-->
+    <!-- Metas Tags & Property -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aprenda HTML & CSS | DevJunior">
+    <meta property="og:description" content="Aprende HTML e CSS do zero com dicas práticas e direto ao ponto.">
+    <meta property="og:url" content="https://o-teu-site.com">
+    <meta property="og:image" content="https://o-teu-site.com/imagem-de-destaque.png">
+
+    <!-- Título -->
     <title>Aprenda HTML & CSS</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/html/icon/android-chrome-192x192.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <!--Cabeçalho-->
+
+    <!-- Cabeçalho -->
     <header>
-        <div id="cabecalho">
-            <nav>
-                <!--Titulo Principal-->
-                <div class="DevP">
-                    <p><i class="fa-solid fa-code"></i>
-                        Dev<span style="color: #c3986b;">Junior</span>
-                        <i class="fa-etch fa-solid fa-laptop"></i>
-                    </p>
-                </div>
-                <!--Menu de Linkes-->
-                <div class="MenuLinks">
-                    <a href="#">Início</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Projetos</a>
-                    <a href="#">Contato</a>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div id="textContent">
-            <h1>Aprenda <br>HTML & CSS</h1>
-            <p class="aprender-progamacao">
-                Um jeito simples de aprender a criar<br> Paginas Web do zero
-            </p>
-            <br>
-            <a href="#" class="btn-1"><i class="fa-solid fa-chalkboard-user"> </i>Começar Agora</a><br><br>
-            <div id="zona-audio">
-                <button id="btn-musica" onclick="liberarAudio()">
-                    <p><i class="fa-solid fa-music"></i>Ouvir Música</p> 
-                </button>
-                <audio id="meu-audio" src="./audio/song.mp3" controls style="display: none;"></audio>
+        <nav>
+
+            <!-- Logo -->
+            <div class="DevP">
+                <p>
+                    <i class="fa-solid fa-code"></i>
+                    Dev<span>Junior</span>
+                    <i class="fa-solid fa-laptop"></i>
+                </p>
             </div>
+
+            <!-- Menu -->
+            <div class="MenuLinks">
+                <a href="#">Início</a>
+                <a href="#">Sobre</a>
+                <a href="#">Projetos</a>
+                <a href="#">Contato</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+
+        <!-- Texto -->
+        <div id="textContent">
+
+            <h1>Aprenda <br>HTML & CSS</h1>
+
+            <p class="aprender-programacao">
+                Um jeito simples de aprender a criar
+                <br>
+                páginas web do zero
+            </p>
+
+            <br>
+
+            <!-- Botão principal -->
+            <a href="#" class="btn-1">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                Começar Agora
+            </a>
+
+            <br><br>
+
+            <!-- Zona do áudio -->
+            <div id="zona-audio">
+
+                <!-- Botão -->
+                <button id="btn-musica">
+                    <i class="fa-solid fa-music"></i>
+                    Ouvir Música
+                </button>
+
+                <!-- Áudio -->
+                <audio id="meu-audio" src="./audio/song.mp3" controls style="width: 300px;"></audio>
+
+            </div>
+
         </div>
+
+        <!-- Caixa lateral -->
         <div class="DivColor">
-         
+           <div class="DivInColor1"></div>
         </div>
+            <!--hr para separar o conteudo principal-->
+        <hr class="firstHR">
+
     </main>
+
+    <!-- JavaScript -->
+    <script defer src="script.js"></script>
+
 </body>
 
 </html>

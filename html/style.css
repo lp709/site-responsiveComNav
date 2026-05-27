@@ -1,198 +1,190 @@
 @charset "UTF-8";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html,
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    width: 100%;
-    min-width: 320px;
-    overflow-x: auto;
-    display: block;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#ffffff;
 }
 
-main {
-    width: 100%;
-    min-width: 320px;
-    flex-shrink: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
+/* NAV */
 
-nav {
-    width: 100%;
-    min-width: 320px;
-    height: 100px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: 10px 40px;
-    color: #ffffff;
-    background-color: #383a46;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    z-index: 1000;
+nav{
+    width:100%;
+    height:90px;
+    background:#383a46;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-div.DevP {
-    font-weight: bold;
-    font-size: 26px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #ffffff;
+.DevP{
+    color:#ffffff;
+    font-size:28px;
+    font-weight:bold;
 }
 
-.MenuLinks {
-    display: flex;
-    gap: 10px;
+.DevP span{
+    color:#c3986b;
+}
+
+.MenuLinks{
+    display:flex;
+    gap:10px;
+}
+
+.MenuLinks a{
+    color:#ffffff;
+    text-decoration:none;
+    padding:10px;
+    transition:0.3s;
+}
+
+.MenuLinks a:hover{
+    color:#c3986b;
+    border-bottom:2px solid #c3986b;
+}
+
+/* MAIN */
+
+main{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:140px 40px;
+    flex-wrap:wrap;
+}
+
+#textContent{
+    width:40%;
+}
+
+#textContent h1{
+    font-size:50px;
+}
+
+.aprender-programacao{
+    margin-top:10px;
+    color:#555;
+}
+
+/* BOTÕES */
+
+.btn-1{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    background:#c3986b;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:5px;
+    transition:0.3s;
     height: 50px;
 }
 
-.MenuLinks a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    font-weight: 500;
+.btn-1:hover{
+    background:white;
+    color:#c3986b;
+    border:1px solid #c3986b;
 }
 
-.MenuLinks a:hover {
-    border-bottom: 2px solid #c3986b;
-    color: #c3986b;
+/* ÁUDIO */
+
+#zona-audio{
+    margin-top:10px;
 }
 
-div#textContent {
-    padding-top: 140px;
-    padding-left: 40px;
-    width: 40%;
+#btn-musica{
+    background:#c3986b;
+    color:white;
+    border:none;
+    padding:12px 16px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+    width: 160px;
+    height: 50px;
 }
 
-div#textContent h1 {
-    font-size: 45px;
-    line-height: 1.2;
+#btn-musica:hover{
+    background:white;
+    color:#c3986b;
+    border:1px solid #c3986b;
 }
 
-p.aprender-progamacao {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #00000086;
+#meu-audio{
+    display:none;
+    margin-top:15px;
+    width:250px;
 }
 
-a.btn-1,
-button#btn-musica {
-    background-color: #c3986b;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.116);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+/* CLASSE ESCONDIDO */
+
+.escondido{
+    display:none !important;
 }
 
-a.btn-1:hover,
-button#btn-musica:hover {
-    background-color: #ffffff;
-    color: #c3986b;
-    border: 1px solid rgba(0, 0, 0, 0.26);
-    cursor: pointer;
+/* DIV LATERAL */
+
+.DivColor{
+    width:50%;
+    height:400px;
+    border:1px solid rgba(0, 0, 0, 0.377);
+    border-radius:6px;
 }
 
-a.btn-1 {
-    padding: 10px;
+
+
+
+hr.firstHR {
+    width: 100%;
+    margin: 100px;
+    color: rgba(0, 0, 0, 0.336);
 }
 
-button#btn-musica {
-    padding: 6px;
-    border: none;
-    width: 163px;
-    height: 45px;
-    border: 1px solid rgba(0, 0, 0, 0.116);
-}
+/* RESPONSIVO */
 
-#btn-musica:active {
-    transform: scale(1.05);
-}
+@media(max-width:768px){
 
-.fa-chalkboard-user,
-.fa-music {
-    margin: 5px;
-}
-
-audio#meu-audio {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-top: 20px;
-    width: 80%;
-}
-
-div.DivColor {
-    background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.418);
-    border-radius: 6px;
-    width: 55%;
-    max-width: 1500px;
-    height: 400px;
-    margin: 140px 40px 20px auto;
-}
-
-@media (max-width: 500px) {
-    nav {
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px 0;
-        height: auto;
+    nav{
+        flex-direction:column;
+        height:auto;
+        padding:15px;
     }
 
-    .MenuLinks {
-        width: 100%;
-        justify-content: center;
-        gap: 5px;
+    main{
+        flex-direction:column;
+        gap:30px;
     }
 
-    .MenuLinks a {
-        padding: 8px 13px;
-        font-size: 15px;
+    #textContent{
+        width:100%;
+        text-align:center;
     }
 
-    main {
-        flex-direction: column;
+    .DivColor{
+        width:100%;
+        height: 400px;
     }
 
-    div#textContent {
-        width: 100%;
-        max-width: 100%;
-        padding-top: 190px;
-        padding-left: 15px;
-        padding-right: 15px;
-        text-align: center;
+    @media(max-width: 350px) {
+        
+    .DivColor{
+        width:100%;
+        height: 200px;
+    }
     }
 
-    div.DivColor {
-        width: 90%;
-        margin: 30px auto 20px auto;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    div#textContent h1 {
-        font-size: 36px;
-    }
-}
-
-@media (min-width: 1024px) {
-    div#textContent h1 {
-        font-size: 45px;
-    }
 }
