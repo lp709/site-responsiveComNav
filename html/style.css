@@ -1,190 +1,259 @@
+/* CSS DOCUMENT */
 @charset "UTF-8";
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* UNIVERSAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#ffffff;
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
 }
 
 /* NAV */
 
-nav{
-    width:100%;
-    height:90px;
-    background:#383a46;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:0 40px;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:1000;
+nav {
+    width: 100%;
+    height: 90px;
+    background: #383a46;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-.DevP{
-    color:#ffffff;
-    font-size:28px;
-    font-weight:bold;
+/* DIV DA NAV */
+.DevP {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.DevP span{
-    color:#c3986b;
+.DevP span {
+    color: #c3986b;
 }
 
-.MenuLinks{
-    display:flex;
-    gap:10px;
+/* LINKS */
+.MenuLinks {
+    display: flex;
+    gap: 10px;
 }
 
-.MenuLinks a{
-    color:#ffffff;
-    text-decoration:none;
-    padding:10px;
-    transition:0.3s;
+.MenuLinks a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
 }
 
-.MenuLinks a:hover{
-    color:#c3986b;
-    border-bottom:2px solid #c3986b;
+.MenuLinks a:hover {
+    color: #c3986b;
+    border-bottom: 2px solid #c3986b;
 }
 
 /* MAIN */
 
-main{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:140px 40px;
-    flex-wrap:wrap;
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 140px 40px;
+    flex-wrap: wrap;
 }
 
-#textContent{
-    width:40%;
+/* AREA DE TEXTO */
+
+#textContent {
+    width: 40%;
 }
 
-#textContent h1{
-    font-size:50px;
+#textContent h1 {
+    font-size: 50px;
 }
 
-.aprender-programacao{
-    margin-top:10px;
-    color:#555;
+.aprender-programacao {
+    margin-top: 10px;
+    color: #555;
 }
 
-/* BOTÕES */
+/* BOTAO */
 
-.btn-1{
-    display:inline-flex;
-    align-items:center;
-    gap:5px;
-    background:#c3986b;
-    color:white;
-    text-decoration:none;
-    padding:12px;
-    border-radius:5px;
-    transition:0.3s;
+
+.btn-1 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #c3986b;
+  color: white;
+  border: 1px solid transparent;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  height: 50px !important;
+  width: 38% !important;
+  padding: 10px;
+}
+
+.btn-1:hover {
+  background: white;
+  color: #c3986b;
+  border: 1px solid rgb(195, 152, 107);
+  box-shadow: 
+    0 0 15px rgba(195, 152, 107, 0.6),
+    0 0 30px rgba(195, 152, 107, 0.4);
+}
+
+/* BOTAO DE AUDIO */
+
+#zona-audio {
+    margin-top: 10px;
+}
+
+#btn-musica {
+    background: #c3986b;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 190px;
     height: 50px;
 }
 
-.btn-1:hover{
-    background:white;
-    color:#c3986b;
-    border:1px solid #c3986b;
+#btn-musica:hover {
+    background: white;
+    color: #c3986b;
+    border: 1px solid #c3986b;
+    box-shadow: 
+    0 0 15px rgba(195, 152, 107, 0.6),
+    0 0 30px rgba(195, 152, 107, 0.4);
 }
 
-/* ÁUDIO */
-
-#zona-audio{
-    margin-top:10px;
+#meu-audio {
+    display: none;
+    margin-top: 15px;
+    width: 250px;
 }
 
-#btn-musica{
-    background:#c3986b;
-    color:white;
-    border:none;
-    padding:12px 16px;
-    border-radius:5px;
-    cursor:pointer;
-    transition:0.3s;
-    width: 160px;
-    height: 50px;
+/* CLASSE ESCONDIDO DO AUDIO*/
+
+.escondido {
+    display: none !important;
 }
 
-#btn-musica:hover{
-    background:white;
-    color:#c3986b;
-    border:1px solid #c3986b;
+/* DIV DE COR NA LATERAL DIREITA*/
+.DivColor {
+    position: relative;
+    width: 50%;
+    height: 400px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.2),
+        0 0 40px rgba(0, 242, 254, 0.3);
 }
 
-#meu-audio{
-    display:none;
-    margin-top:15px;
-    width:250px;
+.DivColor::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    z-index: 1;
+    background: linear-gradient(45deg, #0a0a0c, #3a3b45, #e2e8f0, #00f2fe, #0a0a0c);
+    background-size: 400% 400%;
+    border-radius: 10px;
+    animation: mudarCores 8s ease-in-out infinite;
 }
 
-/* CLASSE ESCONDIDO */
-
-.escondido{
-    display:none !important;
+.DivColor::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: linear-gradient(45deg, #050508, #1a1c23, #4a5568, #cbd5e1, #f8fafc, #050508);
+    background-size: 400% 400%;
+    border-radius: 4px;
+    z-index: 2;
+    animation: mudarCores 12s ease-in-out infinite;
 }
 
-/* DIV LATERAL */
+.DivColor>* {
+    position: relative;
+    z-index: 3;
+}
 
-.DivColor{
-    width:50%;
-    height:400px;
-    border:1px solid rgba(0, 0, 0, 0.377);
-    border-radius:6px;
+@keyframes mudarCores {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 
 
-
-hr.firstHR {
-    width: 100%;
-    margin: 100px;
-    color: rgba(0, 0, 0, 0.336);
-}
 
 /* RESPONSIVO */
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    nav{
-        flex-direction:column;
-        height:auto;
-        padding:15px;
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
     }
 
-    main{
-        flex-direction:column;
-        gap:30px;
+    main {
+        flex-direction: column;
+        gap: 30px;
     }
 
-    #textContent{
-        width:100%;
-        text-align:center;
+    #textContent {
+        width: 100%;
+        text-align: center;
     }
 
-    .DivColor{
-        width:100%;
+    .DivColor {
+        width: 100%;
         height: 400px;
     }
 
     @media(max-width: 350px) {
-        
-    .DivColor{
-        width:100%;
-        height: 200px;
-    }
+
+        .DivColor {
+            width: 100%;
+            height: 200px;
+        }
     }
 
+}
+
+/* MARGIM NOS ICONES */
+.fa-solid {
+    margin: 5px;
 }
